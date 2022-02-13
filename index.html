@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="../Testimonial Project in JavaScript/Images/aziz.jpg"
+      type="image/x-icon"
+    />
+    <title>Quizz App</title>
+  </head>
+  <body>
+    <!-- // First Question -->
+    <div class="container">
+      <div class="heading">
+        <h2>Quiz App</h2>
+      </div>
+      <div class="question">
+        <h2>Question no 1:</h2>
+        <h3>What is the Capital of Pakistan?</h3>
+      </div>
+      <div class="answers">
+        <p id="a">
+          <input type="radio" name="capital" value="Islamabad" />Islamabad
+        </p>
+        <p id="b"><input type="radio" name="capital" value="Lahore" />Lahore</p>
+        <p id="c"><input type="radio" name="capital" value="Multan" />Multan</p>
+        <p id="d">
+          <input type="radio" name="capital" value="Karachi" />Karachi
+        </p>
+      </div>
+      <div class="buttons">
+        <input
+          type="button"
+          value="Previous"
+          id="prevbtn"
+          onclick="plusSlides(-1)"
+        />
+        <input
+          type="button"
+          value="Next"
+          id="nextbtn"
+          onclick=" displayPakCapital(),plusSlides(1)"
+        />
+      </div>
+    </div>
+    <!-- // Second Question -->
+    <div class="container">
+      <div class="heading">
+        <h2>Quiz App</h2>
+      </div>
+      <div class="question">
+        <h2>Question no 2:</h2>
+        <h3>Allam Iqbal born in?</h3>
+      </div>
+      <div class="answers">
+        <p id="a"><input type="radio" name="born" value="Karachi" />Karachi</p>
+        <p id="b"><input type="radio" name="born" value="Lahore" />Lahore</p>
+        <p id="c"><input type="radio" name="born" value="Multan" />Multan</p>
+        <p id="d"><input type="radio" name="born" value="Sialkot" />Sialkot</p>
+      </div>
+      <div class="buttons">
+        <input
+          type="button"
+          value="Previous"
+          id="prevbtn"
+          onclick="plusSlides(-1)"
+        />
+        <input
+          type="button"
+          value="Next"
+          id="nextbtn"
+          onclick="allamaIqbalBorn(),plusSlides(1)"
+        />
+      </div>
+    </div>
+
+    <!-- // Third Question -->
+    <div class="container">
+      <div class="heading">
+        <h2>Quiz App</h2>
+      </div>
+      <div class="question">
+        <h2>Question no 3:</h2>
+        <h3>Whcih is the last surah in Quran?</h3>
+      </div>
+      <div class="answers">
+        <p id="a">
+          <input type="radio" name="quran" value="Surah Nas" />Surah Nas
+        </p>
+        <p id="b">
+          <input type="radio" name="quran" value="Surah Baqra" />Surah Baqra
+        </p>
+        <p id="c">
+          <input type="radio" name="quran" value="Surah Abas" />Sura Abas
+        </p>
+        <p id="d">
+          <input type="radio" name="quran" value="Surah Akhlas" />Surah Akhlas
+        </p>
+      </div>
+      <div class="buttons">
+        <input
+          type="button"
+          value="Previous"
+          id="prevbtn"
+          onclick="plusSlides(-1)"
+        />
+        <input
+          type="button"
+          value="Next"
+          id="nextbtn"
+          onclick="quranSurah(),plusSlides(1)"
+        />
+      </div>
+    </div>
+
+    <!-- // Fourth Question -->
+    <div class="container">
+      <div class="heading">
+        <h2>Quiz App</h2>
+      </div>
+      <div class="question">
+        <h2>Question no 4:</h2>
+        <h3>HTTPS stand for?</h3>
+      </div>
+      <div class="answers">
+        <p id="a">
+          <input
+            type="radio"
+            name="http"
+            value="Hyper Text Transport Protocol"
+          />Hyper Text Transport Protocol
+        </p>
+        <p id="b">
+          <input type="radio" name="http" value="Hyper Text Tele pond" />Hyper
+          Text Tele pond
+        </p>
+        <p id="c">
+          <input
+            type="radio"
+            name="http"
+            value="Hyper Text Transfer Protocol"
+          />Hyper Text Transfer Protocol
+        </p>
+        <p id="d">
+          <input
+            type="radio"
+            name="http"
+            value="Hyper Taji Talokar papu"
+          />Hyper Taji Talokar papu
+        </p>
+      </div>
+      <div class="buttons">
+        <input
+          type="button"
+          value="Previous"
+          id="prevbtn"
+          onclick="plusSlides(-1)"
+        />
+        <input
+          type="button"
+          value="Next"
+          id="nextbtn"
+          onclick="http(),plusSlides(1)"
+        />
+      </div>
+    </div>
+
+    <!-- // Fifth Question -->
+    <div class="container">
+      <div class="heading">
+        <h2>Quiz App</h2>
+      </div>
+      <div class="question">
+        <h2>Question no 5:</h2>
+        <h3>Which City of Pakistan called land of Judges?</h3>
+      </div>
+      <div class="answers">
+        <p id="a">
+          <input type="radio" name="land" value="Mitha Tiwana" />Mitha Tiwana
+        </p>
+        <p id="b">
+          <input type="radio" name="land" value="Pilo Wens" />Pilo Wens
+        </p>
+        <p id="c"><input type="radio" name="land" value="Roda" />Roda</p>
+        <p id="d"><input type="radio" name="land" value="Nurpur" />Nupur</p>
+      </div>
+      <div class="buttons">
+        <input
+          type="button"
+          value="Previous"
+          id="prevbtn"
+          onclick="plusSlides(-1)"
+        />
+        <input
+          type="button"
+          value="Next"
+          id="nextbtn"
+          onclick=" landOfJudges(),displayResult(), plusSlides(1)"
+        />
+      </div>
+    </div>
+    <div id="result"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
